@@ -21,6 +21,8 @@
 - [ ] B3 Write a 1-page service description I can paste anywhere.
 
 ## PHASE C — Get the first client
+> **Learn first:** `business/SALES.md` — sales learning plan (Dev Sethi style): offer/pricing → social selling (outreach that gets replies) → consultative call → objection & close → referrals. Do it alongside these steps.
+
 - [ ] C1 Build a small "proof" demo (a 5-min notebook / output that shows the value).
 - [ ] C2 Publish 1–2 build-in-public posts/week (X + LinkedIn) about what I'm building.
 - [ ] C3 List 20 people/businesses who need this (agritech, energy, insurance doing satellite/ML; founders needing a model).
