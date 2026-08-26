@@ -1,22 +1,10 @@
-# Projects
+# My Technical Work
 
-Canonical index of everything I build. **One note per project.**
+These live in **their own repos** — this business workstation only *points* to them, never duplicates or mixes them in:
 
-## Owned by me (I control these)
+| Work | Repo | Role |
+|------|------|------|
+| VitroVision | `github.com/peeradon4778/VitroVision` | mine (owner) |
+| GISGPT | `github.com/Tutorzaa/GISGPT` | contributor (friend owns) |
 
-| Project | Repo | What it does |
-|---|---|---|
-| **VitroVision** | `peeradon4778/VitroVision` | Zero-shot CV (SAM3) — analyzes plantlets in tissue culture for nursery readiness |
-| **this workstation** | (this repo) | My long-term home base |
-
-## Contributed to (I'm a contributor, not the owner)
-
-| Project | Repo | My role |
-|---|---|---|
-| **GISGPT** | `Tutorzaa/GISGPT` | Contributor — satellite change detection, burn/hotspot, spectral indices |
-
-## Add a new project
-
-1. Copy `_template.md` → `<project>.md`
-2. Fill it in
-3. Add a row to the table above
+> Anything I **build** from the business (services, offers, the future product) is tracked in `../business/` here.
