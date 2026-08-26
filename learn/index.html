@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Learning Map — เส้นทางสกิลสะสม</title>
+<style>
+  :root{--bg:#0f1117;--card:#181c28;--line:#242a3a;--txt:#e6e8ee;--muted:#9aa3b5;--acc:#5b8cff;--acc2:#38d39f;--warn:#ffb45b;--gold:#f5c518;}
+  *{box-sizing:border-box} body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Noto Sans Thai,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+  a{color:var(--acc);text-decoration:none} a:hover{text-decoration:underline}
+  .wrap{max-width:960px;margin:0 auto;padding:0 18px}
+  header{padding:34px 0 14px;border-bottom:1px solid var(--line)}
+  h1{font-size:1.9rem;margin:0 0 6px} h1 .en{color:var(--muted);font-weight:400;font-size:1.15rem}
+  .sub{color:var(--muted)} .pill{display:inline-block;padding:2px 10px;border-radius:20px;font-size:.78rem;margin:2px 2px;background:var(--card);border:1px solid var(--line)}
+  .grid{display:grid;gap:14px;padding:24px 0}
+  .skill{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .skill h2{margin:0 0 8px;font-size:1.25rem}
+  .skill h2 .rank{display:inline-block;min-width:30px;text-align:center;background:var(--acc);color:#0b0e14;border-radius:8px;padding:2px 8px;font-size:.85rem;margin-right:8px;vertical-align:middle}
+  .why{background:rgba(91,140,255,.08);border-left:3px solid var(--acc);padding:10px 12px;border-radius:6px;margin:10px 0;color:#dbe3ff}
+  .why b{color:var(--acc)} .fit{font-size:.85rem;color:var(--acc2)}
+  h3{font-size:1rem;margin:14px 0 6px;color:var(--acc)}
+  .steps{margin:0;padding-left:18px} .steps li{margin:4px 0}
+  .res{display:grid;gap:7px} .res a{display:block;padding:7px 10px;background:#12151f;border:1px solid var(--line);border-radius:8px;font-size:.87rem}
+  .res a b{color:var(--muted);font-weight:500;margin-right:6px}
+  .task{background:rgba(56,211,159,.08);border:1px solid rgba(56,211,159,.35);border-radius:8px;padding:10px 12px;margin-top:10px;font-size:.9rem}
+  .task b{color:var(--acc2)} .done{background:var(--acc2);color:#0b0e14;border:none;border-radius:20px;padding:4px 12px;font-size:.8rem;cursor:pointer;margin-top:8px}
+  footer{padding:24px 0 40px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+  .bar{height:8px;background:var(--card);border-radius:10px;overflow:hidden;margin:10px 0}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),var(--acc2));width:0;transition:.3s}
+  .done-tag{color:var(--acc2);font-weight:600}
+  code{background:#12151f;padding:1px 5px;border-radius:4px;font-family:ui-monospace,Menlo,monospace;font-size:.85em}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>My Learning Map <span class="en">· เส้นทางสกิลสะสม</span></h1>
+  <div class="sub">เป้าหมาย: สร้าง <b>เนื้อสร้างตัว</b> (skill ที่ทบต้น) แล้วนำไปใช้หาเงินจริงกับตลาดโลก — เริ่มจากสิ่งที่เรามีแล้ว (AI / CV / geospatial)</div>
+  <div style="margin-top:10px">
+    <span class="pill">Applied AI/LLM</span><span class="pill">End-to-end builder</span><span class="pill">Computer Vision</span><span class="pill">Domain × AI</span><span class="pill">Geospatial AI</span><span class="pill">Sales/GTM</span><span class="pill">Personal brand</span>
+  </div>
+  <div class="bar"><i id="bar"></i></div>
+  <div class="sub" id="prog">Progress: 0/7 skills</div>
+</header>
+
+<section class="grid">
+
+<!-- 1 -->
+<div class="skill" data-n="1">
+  <h2><span class="rank">1</span>Applied AI / LLM Agents</h2>
+  <div class="why"><b>ทำไมสำคัญกับคุณ:</b> AI กำลังพลิกทุกวงการ — Upwork 2025 มี demand AI/ML <b>+40%</b>, งาน gen-AI ได้ค่าแรง premium (~+22%) บริษัทจ้างคนที่<b>สร้าง agent/automation ใช้ได้จริง</b> ไม่ใช่แค่คุยกับ AI</div>
+  <div class="fit">คุณ: 🟢 มีฐานแล้ว (AI/CV) → ต่อยอดเป็น agent/automation ง่ายสุด</div>
+  <h3>Learning path</h3>
+  <ol class="steps">
+    <li>ภาษาอังกฤษ Python + ลงมือสร้าง API call กับ LLM (OpenAI/Claude) 1 ตัว</li>
+    <li>เรียนรู้ RAG (retrieve + answer) สร้าง chatbot ที่อ้างอิงเอกสารได้</li>
+    <li>สร้าง <b>agent</b> ที่ใช้เครื่องมือ (tool calling) ทำหลายขั้นตอนเอง</li>
+    <li>Deploy ขึ้น cloud ฟรีให้คนใช้ได้จริง (แชร์กับผู้ว่าจ้าง)</li>
+  </ol>
+  <h3>ทรัพยากรฟรีที่ดีที่สุด</h3>
+  <div class="res">
+    <a href="https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ"><b>Karpathy</b> — Neural Networks: Zero to Hero (ฟรี, คัมภีร์)</a>
+    <a href="https://huggingface.co/learn/agents-course"><b>Hugging Face</b> — Agents & LLM Courses (ฟรี)</a>
+    <a href="https://www.deeplearning.ai/"><b>deeplearning.ai</b> — Andrew Ng: GenAI + Prompt Engineering (ฟรี)</a>
+    <a href="https://www.fast.ai/"><b>fast.ai</b> — Practical Deep Learning (ฟรี)</a>
+    <a href="https://neuralnetworksanddeeplearning.com/"><b>NN &amp; Deep Learning</b> — book ฟรี</a>
+  </div>
+  <div class="task"><b>ทำก่อนเลย:</b> สร้าง chatbot 1 ตัวที่อ่านไฟล์ (RAG) แล้ว deploy ให้ chat ใช้ได้จริงในสัปดาห์แรก</div>
+  <button class="done" onclick="mark(1)">✓ ทำแล้ว</button>
+</div>
+
+<!-- 2 -->
+<div class="skill" data-n="2">
+  <h2><span class="rank">2</span>End-to-end Builder (ไอเดีย → product)</h2>
+  <div class="why"><b>ทำไมสำคัญ:</b> ของจริงต้อง "สร้างจบเป็นชิ้น" ที่ขายได้ (เว็บ/แอป/API) ไม่ใช่แค่โมเดล — ความสามารถนี้หายากและทบต้นสุด</div>
+  <div class="fit">คุณ: 🟡 ต้องเพิ่ม (จาก "โมเดล" → "product") เรียนรู้ได้ไม่ยาก</div>
+  <h3>Learning path</h3>
+  <ol class="steps">
+    <li>Frontend (HTML/CSS/JS) + ทำให้เว็บสวยตอบสนอง</li>
+    <li>Backend: Flask/FastAPI (ใช้ Python ที่มีอยู่) + database</li>
+    <li>สร้าง API เชื่อมโมเดล/agent เข้าเว็บ</li>
+    <li>Deploy บน Vercel/Render (ฟรี) + เริ่มเวิร์กกับ cloud</li>
+  </ol>
+  <h3>ทรัพยากรฟรีที่ดีที่สุด</h3>
+  <div class="res">
+    <a href="https://www.theodinproject.com/"><b>The Odin Project</b> — full-stack ฟรี</a>
+    <a href="https://fullstackopen.com/"><b>Full Stack Open</b> — Helsinki (ฟรี, React/Node)</a>
+    <a href="https://www.freecodecamp.org/"><b>freeCodeCamp</b> — หลักสูตรฟรี</a>
+    <a href="https://developer.mozilla.org/"><b>MDN</b> — คู่มือเว็บ</a>
+    <a href="https://flask.palletsprojects.com/"><b>Flask / FastAPI</b> — backend Python</a>
+  </div>
+  <div class="task"><b>ทำก่อนเลย:</b> ทำเว็บหน้าเดียวโชว์ "โปรเจกต์ที่ทำ" แล้ว deploy ฟรี → เปลี่ยนโมเดลเป็นหน้าเว็บ</div>
+  <button class="done" onclick="mark(2)">✓ ทำแล้ว</button>
+</div>
+
+<!-- 3 -->
+<div class="skill" data-n="3">
+  <h2><span class="rank">3</span>Computer Vision / Multimodal AI</h2>
+  <div class="why"><b>ทำไมสำคัญ:</b> AI มองภาพ/วิดีโอ/ดาวเทียม ใช้ใน agri, health, security, robotics, earth-obs — เป็นทักษะเฉพาะทางที่จ่ายดี</div>
+  <div class="fit">คุณ: 🟢 <b>จุดแข็งสุดของเรา</b> (SAM3 PCS, satellite)</div>
+  <h3>Learning path</h3>
+  <ol class="steps">
+    <li>พื้นฐาน: convolution, CNN, vision transformer</li>
+    <li>Zero-shot / segmentation (SAM) — ต่อยอดจากที่ทำ VitroVision</li>
+    <li>Multimodal (ภาพ+ข้อความ) — prompt ภาพ: เจออะไร</li>
+    <li>Deploy ไว: Gradio/API ให้คนใช้ภาพได้เลย</li>
+  </ol>
+  <h3>ทรัพยากรฟรีที่ดีที่สุด</h3>
+  <div class="res">
+    <a href="https://cs231n.stanford.edu/"><b>CS231n</b> — Stanford CV (ฟรี)</a>
+    <a href="https://huggingface.co/learn/computer-vision-course"><b>Hugging Face</b> — Computer Vision course (ฟรี)</a>
+    <a href="https://github.com/facebookresearch/segment-anything"><b>SAM (Segment Anything)</b> — GitHub + docs</a>
+    <a href="https://www.kaggle.com/learn"><b>Kaggle Learn</b> — Intro to Computer Vision</a>
+    <a href="https://pytorch.org/tutorials/"><b>PyTorch tutorials</b> — ฟรี</a>
+  </div>
+  <div class="task"><b>ทำก่อนเลย:</b> เอา VitroVision ขึ้น Hugging Face Space (demo มีคนใช้ภาพได้) แล้วต่อยอดการอ่านภาพ</div>
+  <button class="done" onclick="mark(3)">✓ ทำแล้ว</button>
+</div>
+
+<!-- 4 -->
+<div class="skill" data-n="4">
+  <h2><span class="rank">4</span>Domain × AI (แก้ปัญหาเฉพาะอุตสาหกรรม)</h2>
+  <div class="why"><b>ทำไมสำคัญ:</b> AI ธรรมดากลายเป็น commodity — <b>มูลค่าอยู่ที่การเอา AI ไปแก้ปัญหา "อุตสาหกรรมหนึ่ง"</b> (ประกัน/พลังงาน/agriculture) คนที่รู้ทั้งโดเมนและ AI หายากมาก</div>
+  <div class="fit">คุณ: 🟢 เหมาะสุด — เลือก "ประเมินความเสี่ยง climate/energy" + agri</div>
+  <h3>Learning path</h3>
+  <ol class="steps">
+    <li>เลือก <b>1 โดเมน</b> (เช่น ประกันความเสี่ยงภัย / พลังงาน / เกษตร)</li>
+    <li>เจาะความเจ็บปวดจริง + แหล่งข้อมูล (private datasets / public)</li>
+    <li>เอา AI มาแก้เฉพาะปัญหา → ทำ case study ที่แสดงผลลัพธ์</li>
+    <li>แพ็กเป็น offer ขายได้ (เชื่อม SALES.md)</li>
+  </ol>
+  <h3>วิธีเรียนรู้</h3>
+  <div class="res">
+    <a href="https://www.kaggle.com/datasets"><b>Kaggle datasets</b> — ข้อมูล agri/energy/climate</a>
+    <a href="https://www.prnewswire.com/news-releases/?refresh=1"><b>Industry news</b> — ติดตามปัญหา insurtech/agritech/energy</a>
+    <a href="https://www.tensorflow.org/"><b>TF / PyTorch</b> — โค้ด apply AI กับข้อมูลจริง</a>
+  </div>
+  <div class="task"><b>ทำก่อนเลย:</b> เขียน 1 หน้า: "ปัญหา X ในอุตสาหกรรม Y + ใช้ AI แก้ยังไง + ข้อมูลจากไหน" (มาจาก PLAN.e / NICHE)</div>
+  <button class="done" onclick="mark(4)">✓ ทำแล้ว</button>
+</div>
+
+<!-- 5 -->
+<div class="skill" data-n="5">
+  <h2><span class="rank">5</span>Geospatial / Earth-observation AI</h2>
+  <div class="why"><b>ทำไมสำคัญ:</b> climate change + sustainability + insurance → ต้องการข้อมูลจากดาวเทียม/สภาพอากาศมากขึ้นเรื่อยๆ และยังมีคนเก่งน้อย</div>
+  <div class="fit">คุณ: 🟢 <b>ขอบเฉพาะตัว</b> (GISGPT + VitroVision ไม่มีใครเหมือน)</div>
+  <h3>Learning path</h3>
+  <ol class="steps">
+    <li>Remote sensing พื้นฐาน (Emissary/Normalized indices, NDVI)</li>
+    <li>GIS: QGIS + Python (Rasterio, GeoPandas, GDAL)</li>
+    <li>Google Earth Engine (GEE) — วิเคราะห์ภาพดาวเทียมฟรี</li>
+    <li>ดาวเทียม × weather × ML → correlation / การพยากรณ์</li>
+  </ol>
+  <h3>ทรัพยากรฟรีที่ดีที่สุด</h3>
+  <div class="res">
+    <a href="https://appliedsciences.nasa.gov/what-we-do/training"><b>NASA ARSET</b> — หลักสูตร remote sensing ฟรี</a>
+    <a href="https://sentinel.esa.int/"><b>ESA Sentinel / Copernicus</b> — ข้อมูลดาวเทียมฟรี</a>
+    <a href="https://developers.google.com/earth-engine/tutorials"><b>Google Earth Engine</b> — tutorials ฟรี</a>
+    <a href="https://www.qgis.org/"><b>QGIS</b> — GIS ฟรี</a>
+    <a href="https://rasterio.readthedocs.io/"><b>Rasterio / GeoPandas</b> — Python geospatial</a>
+  </div>
+  <div class="task"><b>ทำก่อนเลย:</b> ทำ 1 โน้ตบุ๊ค: NDVI จากภาพดาวเทียมพื้นที่หนึ่ง + เห็นผลจริง (ต่อยอดจาก GISGPT)</div>
+  <button class="done" onclick="mark(5)">✓ ทำแล้ว</button>
+</div>
+
+<!-- 6 -->
+<div class="skill" data-n="6">
+  <h2><span class="rank">6</span>Sales / GTM / Monetize Expertise</h2>
+  <div class="why"><b>ทำไมสำคัญ:</b> เทคนิคอย่างเดียวไม่พอ — <b>เงินอยู่กับคนที่ "ขาย/แพ็ก/เก็บเงิน" เป็น</b> ทบต้นสูงและคนทำได้น้อย</div>
+  <div class="fit">คุณ: 🟡 กำลังเรียนใน <b>SALES.md</b> (ตามสไตล์ Dev Sethi)</div>
+  <h3>Learning path</h3>
+  <ol class="steps">
+    <li>Positioning + offer + ราคา (value-based)</li>
+    <li>Social selling: DM/outreach / LinkedIn ที่ได้ reply</li>
+    <li>Consultative call: discovery → diagnose → prescribe</li>
+    <li>Objection + close + referral</li>
+  </ol>
+  <h3>ทรัพยากรฟรีที่ดีที่สุด</h3>
+  <div class="res">
+    <a href="https://www.youtube.com/@DevSethiThailand"><b>Dev Sethi Thailand</b> — สไตล์/วิธีขาย</a>
+    <a href="https://www.youtube.com/@AlexHormozi"><b>Alex Hormozi</b> — "$100M Offers" (ฟรี)</a>
+    <a href="https://catalog.hubspot.com/free-sales-courses"><b>HubSpot Academy</b> — free sales courses (มีใบรับรอง)</a>
+    <a href="https://www.coursera.org/"><b>Coursera</b> — Sales/consulting สั้นๆ</a>
+  </div>
+  <div class="task"><b>ทำก่อนเลย:</b> กรอก offer ใน OFFER.md + เขียน 20 DM personalized (ตาม SALES.md Unit 3)</div>
+  <button class="done" onclick="mark(6)">✓ ทำแล้ว</button>
+</div>
+
+<!-- 7 -->
+<div class="skill" data-n="7">
+  <h2><span class="rank">7</span>Personal Brand / Content (สร้างชื่อเสียง)</h2>
+  <div class="why"><b>ทำไมสำคัญ:</b> attention หายาก — ยิ่งสะสม <b>ผู้ติดตาม</b> ยิ่งทบต้น → ได้งาน/ลูกค้า<b>แบบ inbound</b> โดยไม่ต้องวิ่งหา</div>
+  <div class="fit">คุณ: 🟡 เริ่มจาก build-in-public (X/LinkedIn)</div>
+  <h3>Learning path</h3>
+  <ol class="steps">
+    <li>กำหนด niche/เสียงของตัวเองให้ชัด</li>
+    <li>โพสต์ build-in-public 1–2 ต่อสัปดาห์ เรื่องการสร้างโปรเจกต์</li>
+    <li>แชร์บทเรียน/ผลลัพธ์ แทนการโปรโมต</li>
+    <li>ลากคนสนใจ → หน้าเว็บ/offering (hub)</li>
+  </ol>
+  <h3>ทรัพยากรฟรีที่ดีที่สุด</h3>
+  <div class="res">
+    <a href="https://twitter.com/resources"><b>X/Twitter</b> — build-in-public</a>
+    <a href="https://www.linkedin.com/"><b>LinkedIn</b> — B2B network</a>
+    <a href="https://www.copyblogger.com/"><b>Copyblogger</b> — สอนเขียนคอนเทนต์ที่ดึงดูด</a>
+    <a href="https://github.com/"><b>GitHub + Hugging Face</b> — proof of skill ที่ดึงดูด</a>
+  </div>
+  <div class="task"><b>ทำก่อนเลย:</b> เขียนโพสต์ build-in-public 1 อัน เรื่อง "ผมกำลังสร้าง X" (ใช้ข้อ 6-หน่วย 1)</div>
+  <button class="done" onclick="mark(7)">✓ ทำแล้ว</button>
+</div>
+
+</section>
+
+<footer>
+  <b>หลักการ:</b> ทำจริง &gt; ดูจบ — วัดผลที่ "ผลงาน/รายได้" ไม่ใช่วันที่ดูวิดีโอ · เริ่มจากสกิลที่เรามีแล้ว (1,3,4,5) แล้วค่อยต่อยอด 2,6,7<br>
+  เลือกเรียนทีละอย่าง ไม่เร่ง แต่ครบเป็นระบบ — เก็บ Progress บนเบราว์เซอร์นี้ไว้เอง
+</footer>
+</div>
+<script>
+  var keys=[1,2,3,4,5,6,7];
+  function load(){var s={};keys.forEach(function(k){var v=localStorage.getItem('sk'+k);s[k]=(v==='1');});update(s);}
+  function save(s){keys.forEach(function(k){localStorage.setItem('sk'+k,s[k]?'1':'0');});}
+  function update(s){var done=keys.filter(function(k){return s[k];}).length;document.getElementById('prog').textContent='Progress: '+done+'/'+keys.length+' skills';document.getElementById('bar').style.width=(done/keys.length*100)+'%';}
+  function mark(n){var s={};keys.forEach(function(k){s[k]=(localStorage.getItem('sk'+k)==='1');});s[n]=!s[n];save(s);update(s);var el=document.querySelector('[data-n="'+n+'"] .done');el.textContent=s[n]?'✓ เสร็จแล้ว':'✓ ทำแล้ว';}
+  load();
+</script>
+</body>
+</html>
