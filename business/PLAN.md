@@ -3,6 +3,8 @@
 > Goal: turn my skill into **global cash**, then a product/platform. Start small, student-friendly, ~0 cost until cash flow.
 >
 > **Step 0 · สำรวจโลก (done)** — see `business/RECON.md` (who pays, how to reach each region) and `business/WORLD-ECOSYSTEMS.md` (platforms/business-of-regions, the broad connector) — together these set up where to hunt a niche next.
+>
+> **Step 1 · หา niche กลุ่มเป้าหมาย** — see `business/NICHE.md`. Select ONE specific niche (pays · reachable · real recurring pain · I want it), then it becomes the offer (Phase B). **Definition of done is written inside NICHE.md.**
 
 ## PHASE A — Foundation (this week · ~0 cost)
 - [ ] A1 Pick a single positioning line: *"I help ___ solve ___ using ___."* (fill into OFFER.md)
