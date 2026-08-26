@@ -1,6 +1,8 @@
 # Business Money Plan → Tasks
 
 > Goal: turn my skill into **global cash**, then a product/platform. Start small, student-friendly, ~0 cost until cash flow.
+>
+> **Step 0 · สำรวจโลก (done)** — see `business/RECON.md` for the world map (who pays, how to reach each region) that informs the offers below.
 
 ## PHASE A — Foundation (this week · ~0 cost)
 - [ ] A1 Pick a single positioning line: *"I help ___ solve ___ using ___."* (fill into OFFER.md)
