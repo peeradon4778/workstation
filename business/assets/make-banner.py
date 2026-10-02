@@ -163,6 +163,45 @@ def mock_card(banner, title, price, sold):
     return im
 
 
+# ── ภาพ "ตัวอย่างสิ่งที่คุณจะได้รับ" — ใช้เป็นพอร์ตชั่วคราวได้ ────
+def sample_deliverable():
+    im, d = new_canvas()
+    d.text((70, 50), "ตัวอย่างสิ่งที่คุณจะได้รับ", font=font(46), fill=FG)
+    d.text((70, 112), "(ภาพตัวอย่าง — ไม่ใช่งานลูกค้า)", font=font(26), fill=DIM)
+
+    doc = [70, 180, 780, 830]
+    d.rounded_rectangle(doc, radius=18, fill=(250, 250, 250))
+    d.text((110, 215), "SETUP GUIDE", font=font(30), fill=(20, 24, 30))
+    d.line([110, 262, 740, 262], fill=(210, 214, 220), width=2)
+    for i, w in enumerate([0.92, 0.78, 0.86, 0.62]):
+        d.rounded_rectangle([110, 292 + i * 26, 110 + int(630 * w), 302 + i * 26],
+                            radius=5, fill=(190, 196, 204))
+    d.text((110, 430), "How to use", font=font(24), fill=(60, 66, 76))
+    for i in range(5):
+        y = 472 + i * 34
+        d.ellipse([112, y + 8, 126, y + 22], fill=ACC)
+        d.rounded_rectangle([142, y + 8, 142 + int(480 * (0.82 - i * 0.09)), y + 20],
+                            radius=5, fill=(205, 210, 216))
+
+    d.text((110, 660), "Notes", font=font(24), fill=(60, 66, 76))
+    for i, w in enumerate([0.74, 0.62, 0.80]):
+        y = 700 + i * 30
+        d.rounded_rectangle([110, y, 110 + int(560 * w), y + 11],
+                            radius=5, fill=(205, 210, 216))
+
+    d.text((860, 195), "ไฟล์ที่ส่งมอบ", font=font(34), fill=ACC)
+    tree = [("skills/", 0), ("  report-builder.md", 1), ("  data-cleanup.md", 1),
+            ("prompt-templates/", 0), ("  review-code.md", 1), ("  write-docs.md", 1),
+            ("config/", 0), ("  context.md", 1), ("SETUP-GUIDE.md", 0),
+            ("walkthrough.mp4", 0)]
+    y = 255
+    for name, depth in tree:
+        color = ACC2 if depth == 0 else FG
+        d.text((860 + depth * 34, y), name, font=font(28), fill=color)
+        y += 48
+    return im
+
+
 def preview(cards):
     pad = 24
     cw, ch = cards[0].size
@@ -204,6 +243,10 @@ def main():
     for name, im in banners:
         im.save(os.path.join(OUT, name), optimize=True)
         print(f"  {name}  {im.size[0]}x{im.size[1]}")
+
+    extra = sample_deliverable()
+    extra.save(os.path.join(OUT, "sample-deliverable.png"), optimize=True)
+    print(f"  sample-deliverable.png  {extra.size[0]}x{extra.size[1]}")
 
     title = "รับตั้งค่า AI Coding Agent (Claude Code · Cursor) ให้ตรงกับงานคุณ"
     cards = [mock_card(b, title, "฿1,500", "ยังไม่มีรีวิว · ตอบกลับเร็ว") for _, b in banners]
