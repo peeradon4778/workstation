@@ -163,6 +163,40 @@ def mock_card(banner, title, price, sold):
     return im
 
 
+# ── ภาพปกพร้อมใช้ — ปรับผังตามสัดส่วน ───────────────────────────
+def cover_final(w, h):
+    im, d = new_canvas((w, h))
+    pad = int(min(w, h) * 0.075)
+    s = max(0.8, min(1.15, min(w, h) / 900))
+    wide = (w / h) >= 1.35
+
+    if wide:
+        tx, ty = pad, int(h * 0.20)
+        f_tool = font(int(92 * s))
+        y = ty
+        for i, name in enumerate(["Claude Code", "Cursor", "pi"]):
+            d.text((tx, y), name, font=f_tool, fill=ACC if i == 0 else FG)
+            y += int(f_tool.size * 1.42)
+        d.line([tx, y + int(6 * s), tx + int(550 * s), y + int(6 * s)],
+               fill=LINE, width=max(2, int(3 * s)))
+        d.text((tx, y + int(48 * s)), "ตั้งค่าให้ตรงกับงานคุณ",
+               font=font(int(46 * s)), fill=ACC2)
+        d.text((tx, y + int(118 * s)), "ไม่ใช่ทฤษฎี · ใช้ได้จริง · วัดผลได้",
+               font=font(int(32 * s)), fill=DIM)
+        terminal(d, [int(w * 0.50), int(h * 0.18), w - pad, h - int(h * 0.18)])
+    else:
+        tx = pad
+        d.text((tx, pad), "Claude Code  ·  Cursor  ·  pi",
+               font=font(int(40 * s)), fill=ACC)
+        d.text((tx, pad + int(72 * s)), "ตั้งค่าให้", font=font(int(78 * s)), fill=FG)
+        d.text((tx, pad + int(174 * s)), "ตรงกับงานคุณ",
+               font=font(int(78 * s)), fill=ACC2)
+        d.text((tx, pad + int(282 * s)), "ไม่ใช่ทฤษฎี · ใช้ได้จริง · วัดผลได้",
+               font=font(int(30 * s)), fill=DIM)
+        terminal(d, [tx, pad + int(388 * s), w - pad, h - pad])
+    return im
+
+
 # ── ภาพ "ตัวอย่างสิ่งที่คุณจะได้รับ" — ใช้เป็นพอร์ตชั่วคราวได้ ────
 def sample_deliverable():
     im, d = new_canvas()
@@ -247,6 +281,14 @@ def main():
     extra = sample_deliverable()
     extra.save(os.path.join(OUT, "sample-deliverable.png"), optimize=True)
     print(f"  sample-deliverable.png  {extra.size[0]}x{extra.size[1]}")
+
+    finals = [("cover-final-16x9.png", 1600, 900),
+              ("cover-final-4x3.png", 1200, 900),
+              ("cover-final-1x1.png", 1080, 1080)]
+    for name, cw, chh in finals:
+        cov = cover_final(cw, chh)
+        cov.save(os.path.join(OUT, name), optimize=True)
+        print(f"  {name}  {cov.size[0]}x{cov.size[1]}")
 
     title = "รับตั้งค่า AI Coding Agent (Claude Code · Cursor) ให้ตรงกับงานคุณ"
     cards = [mock_card(b, title, "฿1,500", "ยังไม่มีรีวิว · ตอบกลับเร็ว") for _, b in banners]
