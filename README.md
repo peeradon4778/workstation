@@ -1,20 +1,43 @@
 # Business Workstation
 
-The home of my **business**: how I make money, what I sell, and the tasks that move it forward.
+The home of my **business**: what I sell, at what price, and the tasks that move it forward.
 
-> **Scope: business only.** My technical/project work (GISGPT, VitroVision, research) lives in its **own repos** — linked here by pointer only, never mixed in.
+> **Scope: business only.** Technical and research work lives in its own repos — never mixed in here.
+
+## What I sell
+
+**ตั้งค่าและปรับแต่ง Agentic AI harness ให้ตรงกับ workflow จริงของลูกค้า**
+(Claude Code · Cursor · pi และตัวอื่น) — ขายเป็นแพ็ก 4 ขั้น
+
+| ขั้น | แพ็ก | ราคา | ระยะเวลา |
+| --- | --- | --- | --- |
+| 1 | QUICK SETUP | ฿1,500 | 3 วัน |
+| 2 | CUSTOM ⭐ | ฿4,500 | 7 วัน |
+| 3 | PRO | ฿9,900 | 14 วัน |
+| 4 | FULL / TEAM | ฿24,900 | 30 วัน |
 
 ## What's here
-| File | Purpose |
-|------|---------|
-| `business/PLAN.md` | The money plan → actionable tasks (checkbox list) |
-| `business/OFFER.md` | What I sell + price |
-| `business/CLIENTS.md` | Lead & client tracker |
-| `projects/` | Pointers to my technical repos (GISGPT, VitroVision) |
 
-## The money plan in one line
-**Asset = skill** (Python, ML, CV, geospatial, AI). Turn skill → global clients → cash → then the product/platform.
+| ไฟล์ | เนื้อหา |
+| --- | --- |
+| `business/PLAN.md` | แผน → งานที่ต้องทำ (checkbox) · ราคา · ลำดับการขาย · เกณฑ์เลิก |
+| `business/OFFER.md` | 4 แพ็กเกจ + ข้อความหน้างานพร้อมใช้ (ไทย/อังกฤษ) |
+| `business/PROFILE.md` | ตัวตน: ชื่อ · bio · รูป · สกิล · แผนพอร์ต 3 ชิ้น |
+| `business/TRACKER.md` | Lead · งาน · รีวิว · บันไดราคา · library |
+| `business/SALES.md` | แผนฝึกขาย (social selling · consultative · objection · close) |
+| `business/archive/` | เก็บของเก่า (geospatial · affiliate) — ไม่ลบ |
 
-## My technical repos (work lives there, not mixed here)
-- **VitroVision** — `github.com/peeradon4778/VitroVision` (mine)
-- **GISGPT** — `github.com/Tutorzaa/GISGPT` (friend's repo, I'm a contributor)
+## Where I am now
+
+- ✅ บัญชี Fastwork สมัครแล้ว
+- ⬜ พอร์ต 3 ชิ้น (setup ของตัวเอง · วิดีโอเดโม · คำรับรองจากเพื่อน)
+- ⬜ หน้างาน 4 แพ็ก
+- ⬜ ลูกค้ารายแรก
+
+## หลักการที่ยึด
+
+1. **ขาย "การตั้งค่า" ไม่ขาย "การสอน"** — ตรวจคุณภาพเองได้ · ไม่ต้องนัดเวลา · ไม่ต้องเก่งพูด
+2. **แพ็ก "จำนวนชิ้น" ไม่ใช่ "ผลลัพธ์"** — เนื้อหาแปรตามบรีฟ แต่ขอบเขตตายตัว
+3. **เขียนเพดานเป็นตัวเลขเสมอ** — workflow · skill · ครั้งที่แก้
+4. **ทุกงานต้องเหลือของที่ใช้ซ้ำได้** — ไม่งั้นเป็นฟรีแลนซ์ ไม่ใช่บริษัทคนเดียว
+5. **ตอบกลับเร็วคือสนามเดียวที่แข่งได้ตั้งแต่วันแรก**

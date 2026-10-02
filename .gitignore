@@ -27,3 +27,14 @@ venv/
 *.db
 *.db-wal
 *.db-shm
+
+# Business data — ห้าม commit ข้อมูลจากหลังบ้าน affiliate
+# (Product Feed = ข้อมูลร้านค้า/คอมมิชชัน ไม่ควรอยู่ใน public repo)
+business/data/
+business/tools/**/data/
+business/tools/**/_*.json
+business/tools/**/_*.log
+feed-*.csv
+feed-*.xlsx
+*product-feed*
+*ProductFeed*

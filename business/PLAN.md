@@ -1,49 +1,175 @@
-# Business Money Plan → Tasks
+# Business Plan — ตั้งค่า Agentic AI Harness ให้ตรงกับงานลูกค้า
 
-> Goal: turn my skill into **global cash**, then a product/platform. Start small, student-friendly, ~0 cost until cash flow.
+> **สถานะ: เริ่มจาก 0 · บัญชี Fastwork สมัครแล้ว · ยังไม่มีลูกค้า/รีวิว**
+> **ทิศทาง:** รับบรีฟ → ปรับแต่ง harness ให้ตรงกับ workflow จริงของลูกค้า → ขายเป็นแพ็ก 4 ขั้น
 >
-> **Step 0 · สำรวจโลก (done)** — see `business/RECON.md` (who pays, how to reach each region) and `business/WORLD-ECOSYSTEMS.md` (platforms/business-of-regions, the broad connector) — together these set up where to hunt a niche next.
->
-> **Step 1 · หา niche กลุ่มเป้าหมาย** — see `business/NICHE.md`. Select ONE specific niche (pays · reachable · real recurring pain · I want it), then it becomes the offer (Phase B). **Definition of done is written inside NICHE.md.**
+> **Scope: business only.** งานเทคนิค/การเรียน แยกอยู่ที่ของตัวเอง ไม่ดึงมาไว้ในนี้
 
-## PHASE A — Foundation (this week · ~0 cost)
-- [ ] A1 Pick a single positioning line: *"I help ___ solve ___ using ___."* (fill into OFFER.md)
-- [ ] A2 Refresh LinkedIn: header + bio = the offer, results-oriented About.
-- [ ] A3 Refresh GitHub profile (pin workstation + VitroVision; readable READMEs).
-- [ ] A4 Set up X/Twitter (bio = the offer + how to contact).
-- [ ] A5 Create a **free** personal site (GitHub Pages) linking GitHub / Hugging Face / LinkedIn / X.
-- [ ] A6 Create a Hugging Face account; publish one project (VitroVision model / a satellite notebook).
-- [ ] A7 Fill in OFFER.md (title, problem, deliverable, timeline, price, proof).
+---
 
-## PHASE B — Pick & define the offer
-- [ ] B1 Choose ONE service to sell first: (a) ML/CV model, (b) satellite/geospatial analysis, (c) AI tool/automation, (d) data-science/notebook.
-- [ ] B2 Price it **$300–800** — high enough to be worth my time.
-- [ ] B3 Write a 1-page service description I can paste anywhere.
+## 1. ทำไมทิศทางนี้ — 3 เหตุผล
 
-## PHASE C — Get the first client
-> **Learn first:** `business/SALES.md` — sales learning plan (Dev Sethi style): offer/pricing → social selling (outreach that gets replies) → consultative call → objection & close → referrals. Do it alongside these steps.
+### (1) ตลาดจ่ายเงินจริง และมีราคาให้ยึด
 
-- [ ] C1 Build a small "proof" demo (a 5-min notebook / output that shows the value).
-- [ ] C2 Publish 1–2 build-in-public posts/week (X + LinkedIn) about what I'm building.
-- [ ] C3 List 20 people/businesses who need this (agritech, energy, insurance doing satellite/ML; founders needing a model).
-- [ ] C4 Write 20 **personalized** 5-line outreach messages (one line about THEIR problem — not spam).
-- [ ] C5 Send outreach + 1 follow-up after 4–5 days.
-- [ ] C6 Set up profile on Upwork/Fiverr (offer + proof) or a relevant job board.
-- [ ] C7 Tell my warm network; ask for 1 intro / referral.
+| บริการในตลาด (Fastwork) | ราคา |
+| --- | --- |
+| Claude Code tutor ตัวต่อตัว | **฿1,500/ชม.** |
+| AI Quick Start 90 นาที 1:1 | ฿1,290 |
+| **Claude Code + n8n ตัวต่อตัว 2 ชม.** | **฿4,500** |
+| อบรมเจ้าของธุรกิจ ครึ่งวัน / เต็มวัน | ฿4,900 / ฿8,900 |
+| n8n AI Automation Basic (onsite) | ฿8,999 |
+| อบรมองค์กร ครึ่งวัน / เต็มวัน | ฿12,000 / ฿18,000 |
+| Custom onsite 6–8 ชม. | ฿25,000 |
+| วางระบบต่อเนื่อง 12 ชม./เดือน | ฿26,000 |
+| หลักสูตร 2 วัน (1 คน) | ฿20,900 |
 
-## PHASE D — Land & deliver
-- [ ] D1 Close 1 paying client.
-- [ ] D2 Deliver excellent work; over-communicate; get a testimonial + permission to share.
-- [ ] D3 Turn the result into a case study (problem → what I did → outcome → numbers).
-- [ ] D4 Raise price or expand scope; ask for a referral.
+**และมีหลักฐานว่าขายได้จริง:** เจ้าหนึ่งในหมวดนี้ **ขายได้ 232 ครั้ง · จ้างซ้ำ 187 ครั้ง (80%)**
+→ **การสอน/ตั้งค่า harness ไม่ใช่ทฤษฎี แต่มีคนจ่ายอยู่**
 
-## PHASE E — Systematize → product → platform (the long-term dream)
-- [ ] E1 Package the repeatable part of the service (template the deliverable) to cut time.
-- [ ] E2 Add a second offer / a niche (e.g., climate-risk data for Gulf insurers, agritech for India).
-- [ ] E3 Use profit to fund building the real platform/product I've always wanted.
-- [ ] E4 Keep costs ~0 until revenue; save a cash buffer.
+### (2) จุดตัดที่ยังไม่มีคนทำ — "ลึกเฉพาะ harness"
 
-## Guardrails
-- [ ] G1 **Do NOT spend the 10,000 baht** on paid tools / ads / domains.
-- [ ] G2 Keep studies primary — ~5–10 hrs/week on this.
-- [ ] G3 One thing at a time — finish a phase before the next.
+เจ้าส่วนใหญ่ขาย **กว้าง** (ChatGPT + Claude + n8n + Lovable + Cursor + … 12 เครื่องมือ)
+**ช่องว่างคือ แคบ + ลึก: ปรับ harness ให้ตรงกับงานและลดต้นทุน**
+
+หลักฐานว่านี่เป็นปัญหาจริง:
+- **benchmark: harness มีผลต่อต้นทุน token มากกว่า model — ต่างกันถึง 75%** บนงานเดียวกัน
+- งานวิจัย: agent ขนาดเล็ก + harness ที่ปรับให้เหมาะ → **ถูกกว่า 90%** ที่ performance เท่ากัน
+- Databricks เขียนบล็อกทั้งชิ้นเรื่อง "Managing AI Coding Costs at Scale"
+
+### (3) ใช้ "ของที่มีอยู่แล้ว" — ไม่ต้องสร้างใหม่
+
+| สิ่งที่มี | กลายเป็น |
+| --- | --- |
+| setup harness ที่ใช้เอง | **สินค้าชิ้นแรก + ตัวอย่างผลงาน** |
+| ความรู้เรื่อง context / model / token cost | จุดขาย "ถูกลง" |
+| **เคยสอนเพื่อนให้ใช้ Agentic coding AI ได้** | **หลักฐานจริง** → ขายแพ็กอบรมได้ในอนาคต |
+
+> **พื้นฐานเดิมของเจ้าของโปรเจกต์ (คำพูดตัวเอง):**
+> *"ผมชอบใช้ harness และผมพอรู้วิธีปรับแต่ง harness ให้ตรงใจ"*
+> *"ผมเคยสอนเพื่อนที่ใช้อะไรแบบนี้ไม่เป็น ให้พอใช้ Agentic coding AI ได้"*
+> *"การตั้งค่านั้นมันไม่ได้ยุ่งยากอย่างที่คิด"*
+
+---
+
+## 2. สินค้า — 4 แพ็ก + add-on
+
+> รายละเอียดเต็มพร้อมข้อความพร้อม paste อยู่ที่ `OFFER.md`
+
+| ขั้น | ชื่อ | ราคา | ระยะเวลา | บทบาท |
+| --- | --- | --- | --- | --- |
+| **1** | QUICK SETUP | **฿1,500** | 3 วัน | ประตู (ปฏิเสธยาก) |
+| **2** | CUSTOM | **฿4,500** | 7 วัน | ⭐ **ตัวขายจริง** |
+| **3** | PRO | **฿9,900** | 14 วัน | ขยับขึ้น |
+| **4** | FULL / TEAM | **฿24,900** | 30 วัน | **สมอ** + รายได้ก้อนใหญ่ |
+
+**Add-on:** MCP server ฿3,500 · อบรมทีม ฿3,500/ชม. · ดูแลต่อเนื่อง ฿4,900/เดือน · เพิ่ม workflow ฿900 · เพิ่ม skill ฿700
+
+**หลักการตั้งราคา 3 ข้อ:**
+1. **ขั้น 4 มีไว้เป็นสมอ** → ทำให้ขั้น 2 ดูถูก
+2. **ขั้น 2 คือตัวที่อยากขาย** → ใส่ของให้คุ้มที่สุด
+3. **ขั้น 1 คือประตู ไม่ใช่รายได้** → แลกกับรีวิว
+
+---
+
+## 3. ลำดับการขาย (ท่าที่ใช้จริง)
+
+```text
+ลูกค้าทัก
+   ↓
+ถาม 3 คำถาม (ในแชท Fastwork เท่านั้น)
+   1. ใช้ harness อะไร · งานหลักคืออะไร
+   2. อะไรที่ยังต้องทำมือซ้ำๆ
+   3. อยากได้อะไร — เร็วขึ้น / ถูกลง / ปลอดภัยขึ้น
+   ↓
+ปรึกษาฟรี 15 นาที
+   ↓
+⭐ เสนอ "ขั้น 1 ก่อน" แม้เขาจะอยากได้ขั้น 4
+   ↓
+พิมพ์สรุปขอบเขตในแชท → ลูกค้าจ่าย → ทำงาน
+   ↓
+ส่งมอบ + ขอรีวิว + เสนอขั้นถัดไป
+```text
+**ทำไมเสนอขั้น 1 ก่อน:** ปิดง่ายกว่า · ส่งเร็ว → ได้รีวิวเร็ว · เห็น workflow จริงของเขา · ความเสี่ยงต่ำ
+**และ:** ลูกค้าเดิมจ่ายซ้ำง่ายที่สุด (เจ้าอ้างอิง: จ้างซ้ำ 80%)
+
+---
+
+## 4. สิ่งที่ต้องมีก่อนรับงานแรก
+
+- [ ] **ตัวอย่างผลงาน 1 ชิ้น** — setup harness ของตัวเอง (เอกสาร + วิดีโอ 5–10 นาที)
+- [ ] **หน้างานใน Fastwork** 4 แพ็ก (ข้อความพร้อมใน `OFFER.md`)
+- [ ] **โปรไฟล์ครบ** — รูปหน้าตรง · bio ไทย/อังกฤษ · สกิล/tags (ดู `PROFILE.md`)
+- [ ] **เปิดแจ้งเตือนมือถือ** — ตอบใน 5 นาที (ตัวเลขเดียวที่แข่งได้ตั้งแต่วันแรก)
+- [ ] **อ่าน `SALES.md`** — แผนฝึกขาย
+
+---
+
+## 5. แผนพอร์ต 3 ชิ้น
+
+| # | ชิ้น | ทำจากอะไร | ใช้เวลา |
+| --- | --- | --- | --- |
+| **1** | **setup harness ของตัวเอง** | ของที่ใช้อยู่แล้ว | 2 ชม. |
+| **2** | **วิดีโอเดโม 5–10 นาที** | อัดหน้าจอตอนใช้ setup นั้น | 1 ชม. |
+| **3** | **คำรับรองจากเพื่อนที่เคยสอน** | ขอข้อความสั้นๆ 1–2 ประโยค + อนุญาตเผยแพร่ | 15 นาที |
+
+> ชิ้นที่ 3 สำคัญที่สุด และ **ไม่มีค่าใช้จ่าย** — เพราะมันคือ **หลักฐานทางสังคม** ที่งานใหม่ที่สุดขาด
+
+---
+
+## 6. Guardrails (ห้ามแหก)
+
+- [ ] **G1 เขียนเพดานเป็น "จำนวน" ทุกครั้ง** — workflow / skill / ครั้งที่แก้ (ไม่งั้นงานไม่มีวันจบ)
+- [ ] **G2 ยืนยันขอบเขตในแชท Fastwork ก่อนเริ่มงานเสมอ** — เป็นหลักฐาน
+- [ ] **G3 ห้ามสัญญาว่า "จะติดตั้งสำเร็จแน่นอน" สำหรับระบบที่พึ่ง API ของลูกค้า** — สัญญาได้แค่ว่า *"ตั้งค่าให้ครบตามขอบเขต"*
+- [ ] **G4 ห้ามรับงานที่มีข้อมูลลับ/รหัสผ่านของลูกค้า** — ให้เขาใส่เอง
+- [ ] **G5 ทำนอกแพลตฟอร์ม = ไม่ถูกนับประวัติ** → งานแรกๆ ต้องรันผ่าน Fastwork
+- [ ] **G6 งบ ฿1,500 — ห้ามใช้จ่ายเกินโดยไม่มีรายได้เข้ามาก่อน**
+- [ ] **G7 การเรียนมาก่อน — เพดาน 5–10 ชม./สัปดาห์**
+
+---
+
+## 7. เกณฑ์เลิก (ตั้งไว้ล่วงหน้า)
+
+| เมื่อ | ถ้า | ทำอะไร |
+| --- | --- | --- |
+| 30 วัน | ไม่มีคนทักเลย | เปลี่ยนราคา/ชื่อหน้างาน แล้วลองอีก 30 วัน |
+| 60 วัน | ทัก ≥ 10 แต่ไม่มีใครจ่าย | ทบทวน **แพ็ก 1** — ราคาหรือขอบเขตยังไม่น่าสนใจ |
+| 90 วัน | ไม่มีลูกค้าเลย หลังยิงข้อเสนอ 50+ | **หยุด** — ทำ post-mortem แล้วเลือกใหม่ |
+| เมื่อไหร่ก็ตาม | รู้สึกว่า **ไม่ชอบอธิบายให้คนอื่นฟัง** | **นั่นคือคำตอบที่มีค่า** → เปลี่ยนไป "รับทำ" อย่างเดียว (ตัดการอบรมออก) |
+
+---
+
+## 8. ไทม์ไลน์ 90 วัน
+
+| สัปดาห์ | ทำอะไร | เป้า |
+| --- | --- | --- |
+| **1** | เก็บ setup ตัวเอง → เอกสาร + วิดีโอ | พอร์ตชิ้น 1–2 |
+| **1** | ลงหน้างาน 4 แพ็ก + โปรไฟล์ครบ | หน้างานเปิด |
+| **1** | ขอคำรับรองจากเพื่อนที่เคยสอน | พอร์ตชิ้น 3 |
+| **2** | ทัก 20 คน (คนรู้จัก + ธุรกิจเล็ก + กลุ่มออนไลน์) | บทสนทนา 3–5 |
+| **2–3** | ตอบทุกงานที่ตรง **ภายใน 5 นาที** | ยิงข้อเสนอ 20–30 |
+| **3–4** | **ปิดงานแรก** (เสนอขั้น 1) | ⭐ **รีวิว 5 ดาวอันแรก** |
+| **5–8** | ใช้รีวิว → ขยับราคา + upsell ขั้น 2 | ฿4,500/งาน |
+| **9–12** | เก็บ library (skill/template ที่ใช้ซ้ำได้) | งานที่ 3–5 · งานเสร็จเร็วขึ้น |
+
+---
+
+## 9. หลักการที่ต้องไม่ลืม
+
+> **ทุกงานต้องเหลือ "ของ" ที่ใช้ซ้ำได้** → ไม่งั้นเป็นฟรีแลนซ์ ไม่ใช่บริษัทคนเดียว
+> **library ของคุณต้องโตทุกงาน:** `skills/` · `prompt-templates/` · `configs/` · `docs/`
+
+---
+
+## 10. บันทึกการตัดสินใจ
+
+| วันที่ | ตัดสินใจ | เหตุผล |
+| --- | --- | --- |
+| 2026-10-02 | เลือกทิศทาง **ตั้งค่า harness** | ตลาดจ่ายจริง · มีช่องว่างที่ไม่ลึกเกินลูกค้าเข้าใจ · ใช้ของที่มีอยู่แล้ว |
+| 2026-10-02 | **ไม่ทำ** affiliate / web scraping / AEO | affiliate เพดาน 2% + ล็อกประเทศ · scraping ถูก productize ที่ $30–199/เดือน · AEO ต้องรอ 3–6 เดือนและวัดไม่ได้ |
+| 2026-10-02 | แพ็ก 4 ขั้น แทนการสอนล้วน | การสอน "รก" (ต้องนัดเวลา · ต้องเก่งพูด · วัดผลยาก) · การตั้งค่าตรวจคุณภาพเองได้ |
+
+> **ตรรกะความเสี่ยงที่บันทึกไว้ (คำพูดเจ้าของ):**
+> *"ถ้าขายไม่ได้ผมก็ไม่เสียแรงอะไร เพราะผมขายในความรู้ที่ผมรู้และใช้ได้อยู่แล้ว"*
+> **ถูกต้อง** — downside จำกัดที่เวลา · และของที่ทำ (setup + เอกสาร + วิดีโอ) **ยังใช้เองได้อยู่ดี**
+> **ความเสี่ยงจริงข้อเดียวคือ "สัญญาเกินขอบเขต" → เสียรีวิว** → นั่นคือเหตุผลของ G1–G3
