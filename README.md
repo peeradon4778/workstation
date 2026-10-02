@@ -25,6 +25,7 @@ The home of my **business**: what I sell, at what price, and the tasks that move
 | `business/META.md` | เพิ่มการมองเห็น: Fastwork Score · ชั้นคำค้น · key messages · 5 ชื่องาน · กฎ |
 | `business/SOLUTIONS.md` | หลังร้าบ: เมนูโซลูชัน 8 อย่าง · ตายตัว vs ปรับตามบรีฟ · 6 คำถามในใจลูกค้า |
 | `business/LISTING-1.md` | ข้อความพร้อมกรอกลงหน้างาน (ไทย/อังกฤษ) |
+| `business/PORTFOLIO.md` | พอร์ต: 8S อันไหนโชว์ได้ · ลูกค้าอยากเห็นอะไร · 5 คลิปที่ต้องอัด |
 | `business/OFFER.md` | 4 แพ็กเกจ + ข้อความหน้างานพร้อมใช้ (ไทย/อังกฤษ) |
 | `business/PROFILE.md` | ตัวตน: ชื่อ · bio · รูป · สกิล · แผนพอร์ต 3 ชิ้น |
 | `business/TRACKER.md` | Lead · งาน · รีวิว · บันไดราคา · library |
