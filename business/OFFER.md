@@ -111,11 +111,13 @@
 
 ---
 
-## 📝 ข้อความหน้างาน — ภาษาไทย (paste ได้เลย)
+## 📝 ข้อความหน้างานที่ 1 — ไทย (paste ได้เลย)
+
+> **หมายเหตุ:** ชื่องานต้องมีคำที่คนค้นหา — ดูเหตุผลใน `RESEARCH.md` §4
 
 ```text
-ตั้งค่า AI Coding Harness ให้ตรงกับงานคุณ
-(Claude Code · Cursor · pi และตัวอื่น)
+รับตั้งค่า AI Coding Agent (Claude Code · Cursor · pi) ให้ตรงกับงานคุณ
+AI Automation · n8n · ปรับแต่ง workflow และลดต้นทุน token
 
 ผมปรับ harness ให้เข้ากับ workflow จริงของคุณ —
 ไม่ใช่สอนทฤษฎี แต่ตั้งค่าให้ใช้ได้เลย
@@ -140,11 +142,33 @@
 
 ---
 
-## 📝 Service Listing — English (สำหรับ fastwork.com)
+## 📝 หน้างานที่ 2 — สอน (หมวด AI Course · ขั้นต่ำ ฿300)
+
+> ใช้เมื่อพร้อม — และใช้ได้เพราะมี **ประสบการณ์สอนเพื่อนจริง**
 
 ```text
-AI Coding Harness Setup — Tailored to Your Workflow
-(Claude Code · Cursor · pi · and others)
+สอนใช้ AI Coding Agent (Claude Code · Cursor · pi) แบบตัวต่อตัว
+จับมือทำกับงานจริงของคุณ — ไม่ใช่ทฤษฎี
+
+90 นาที · ฿1,500
+  สำรวจ harness ของคุณ · ปรับตั้งค่าให้ตรงงาน · ตั้ง context+model · เอกสารสรุป
+
+3 ชั่วโมง · ฿4,500
+  1:1 จับมือทำ · ตั้งค่าจริงกับงานคุณ · prompt template 3-5 อัน · บันทึกวิดีโอให้ดูซ้ำ
+
+6 ชั่วโมง · ฿9,900
+  ครบวงจร + จัดการ context/ต้นทุน + แพ็กให้ทีมใช้เหมือนกัน
+
+🆓 ทักมาปรึกษาก่อนได้ฟรี
+```
+
+---
+
+## 📝 Service Listing (English) — for fastwork.com
+
+```text
+AI Coding Agent Setup (Claude Code · Cursor · pi) — Tailored to Your Workflow
+AI Automation · n8n · workflow tuning & token cost reduction
 
 I configure your agentic coding harness around your actual workflow.
 Not theory — a setup you can use the same day.

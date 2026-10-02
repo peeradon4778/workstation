@@ -21,6 +21,7 @@ The home of my **business**: what I sell, at what price, and the tasks that move
 | ไฟล์ | เนื้อหา |
 | --- | --- |
 | `business/PLAN.md` | แผน → งานที่ต้องทำ (checkbox) · ราคา · ลำดับการขาย · เกณฑ์เลิก |
+| `business/RESEARCH.md` | ตลาด Fastwork หมวด AI: ราคาขั้นต่ำ · คู่แข่ง 12 ราย · ช่องว่าง · ช่องทาง |
 | `business/OFFER.md` | 4 แพ็กเกจ + ข้อความหน้างานพร้อมใช้ (ไทย/อังกฤษ) |
 | `business/PROFILE.md` | ตัวตน: ชื่อ · bio · รูป · สกิล · แผนพอร์ต 3 ชิ้น |
 | `business/TRACKER.md` | Lead · งาน · รีวิว · บันไดราคา · library |
